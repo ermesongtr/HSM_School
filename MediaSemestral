@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class MediaSemestral {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double prova, projeto, exercicios, Media, mediaL, mediaT, Mnota, media;
+		
+		System.out.print("Nota da Prova: ");
+		prova = sc.nextDouble();
+		
+		System.out.println("Nota do Projeto: ");
+		projeto = sc.nextDouble();
+		
+		System.out.println("Nota da Lista de Exercicios: ");
+		exercicios = sc.nextDouble();
+		
+		System.out.println("Nota de MOOCS: ");
+		Mnota = sc.nextDouble();
+		
+		media = (prova + projeto + Mnota) / 3;
+		mediaL = (exercicios) / 2;
+		mediaT = (media + mediaL);
+		Media = (mediaT - 10);
+		
+		if(media >= 8) {
+			System.out.println("Parabéns, você foi aprovado!");
+		}
+			else {
+				System.out.println("Infelizmente você não atingiu a média necessária" (+Media+) "para ser aprovado");
+				
+			}
+
+		sc.close();
+		
+	}
+
+}
