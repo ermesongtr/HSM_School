@@ -1,0 +1,5 @@
+orcamento_projeto = 56300
+iss = 0.04
+icms = 0.18
+valor_final = orcamento_projeto + (orcamento_projeto * iss) + (orcamento_projeto * icms) 
+print(f'o valor final do projeto é: R${valor_final}')
