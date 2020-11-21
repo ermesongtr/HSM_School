@@ -1,0 +1,22 @@
+print("Aplicativo para Fiscalização de Transito!' \
+\n Favor digitar as informações solicitadas a seguir:")
+
+placa = str(input('Número da Placa do Veículo: '))
+velocidade_permitida = int(input('Velocidade Permitida: '))
+velocidade_veiculo = int(input('Velocidade do Veiculo: '))
+
+nivel_infracao = int((velocidade_veiculo/velocidade_permitida *100) - 100)
+
+if nivel_infracao <= 0:
+  print('Não houve infrações!')
+elif nivel_infracao <= 20:
+  print(f"O veículo de placa: {placa} comeceu uma infração média! \
+  \n Aplicar a seguinte multa: R$130,16.")
+
+elif nivel_infracao <= 50:
+  print(f"O veículo de placa: {placa} comeceu uma infração grave! \
+  \n Aplicar a seguinte multa: R$195,23.")
+
+elif nivel_infracao > 50:
+  print(f"O veículo de placa: {placa} comeceu uma infração gravíssima! \
+  \n Aplicar a seguinte multa: R$880,41.")
