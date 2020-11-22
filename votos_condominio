@@ -1,0 +1,8 @@
+from random import randrange
+total_votos = 36
+votos = {'azul': '', 'vermelho': '', 'amarelo': '', 'branco': '', 'nulo':''}
+
+for items in votos:
+  x = randrange(0, total_votos)
+  total_votos = total_votos - x
+  print(f'Opções: {items} | Quantidade de votos: {x}')
